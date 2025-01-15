@@ -1,0 +1,541 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar-dark .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    position:relative;
+}
+
+.nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* Hero Section 
+.hero {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}*/
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Cards */
+.card {
+    height: 98%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px 1px rgba(0, 68, 255, 0.953);
+}
+
+/* Skills */
+
+#skills .card3{
+margin: 10px;  
+ color: white;
+ width: 20%;
+ height: 60px;
+ padding: 10px;
+ margin: 0;
+ text-align: center;
+ background-image: linear-gradient(163deg, #007bff 0%,  #007bff 100%);
+ border-radius: 20px;
+ transition: all .3s;
+ display: inline-block;
+}
+#skills .card3:hover{
+    box-shadow: 0px 0px 30px 1px rgba(0, 68, 255, 0.953);
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+     box-shadow: 0px 0px 30px 1px rgba(0, 68, 255, 0.953);
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #ccc;
+    padding: 20px 0;
+}
+
+.container2 .Card .card-image {
+    width: 30px;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.container2 .Card .card-image1 {
+    width: 35px;
+    height: 35px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
+
+.container2 .Card1{
+width: 20%;
+ height: 80px;
+ background-image: linear-gradient(163deg, #007bff 0%, #3700ff 100%);
+ border-radius: 20px;
+ transition: all .3s;
+ display: inline-block;
+}
+
+.container2 .Card1:hover{
+    box-shadow: 0px 0px 30px 1px rgba(0, 213, 255, 0.471);
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero img {
+        width: 50%;
+    }
+}
+
+
+/* From Uiverse.io by mrhyddenn */ 
+.button {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  .box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(58, 165, 253);
+    overflow: hidden;
+  }
+  
+  .box:before {
+    content: "R";
+    position: absolute;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+  }
+  
+  .box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'E';
+  }
+  
+  .box:nth-child(3)::before {
+    content: 'S';
+  }
+  
+  .box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'U';
+  }
+  
+  .box:nth-child(5)::before {
+    content: 'M';
+  }
+  .box:nth-child(6)::before {
+    content: 'E';
+  }
+  .box:nth-child(7)::before {
+    content: '';
+  }
+  .box:nth-child(8)::before {
+    content: '';
+  }
+  
+  .button:hover .box:before {
+    transform: translateY(0);
+  }
+
+.hero {
+    background-image: url('Induwara (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-attachment:fixed;
+   /* Makes the section height equal to the viewport */
+    padding: 0; /* Remove extra padding to show full image */
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url('Induwara (1).png');
+       height: 100vh; /*  Allow height to adjust based on content */
+       background-size: contain; /* Make the whole image visible */
+    }
+}
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    video {
+        width: 70%; /* Make the video smaller */
+    }
+}
+
+ /* From Uiverse.io by EddyBel */ 
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    animation: toggle__animation 3s infinite;
+  }
+  
+  .switch::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(20px);
+    z-index: -1;
+    border-radius: 50px;
+    background-color: #d8ff99;
+    background-image: radial-gradient(at 21% 46%, hsla(183,65%,60%,1) 0px, transparent 50%),
+  radial-gradient(at 23% 25%, hsla(359,74%,70%,1) 0px, transparent 50%),
+  radial-gradient(at 20% 1%, hsla(267,83%,75%,1) 0px, transparent 50%),
+  radial-gradient(at 86% 87%, hsla(204,69%,68%,1) 0px, transparent 50%),
+  radial-gradient(at 99% 41%, hsla(171,72%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 55% 24%, hsla(138,60%,62%,1) 0px, transparent 50%);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fdfefedc;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.35em;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -10px 10px 0px inset,
+       rgba(0, 0, 0, 0.09) 0px -1px 15px -8px;
+    background-color: #ff99fd;
+    background-image: radial-gradient(at 81% 39%, hsla(327,79%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 11% 72%, hsla(264,64%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 23% 20%, hsla(75,98%,71%,1) 0px, transparent 50%);
+  }
+  
+  .input__check:checked + .slider {
+    background-color: #17202A;
+  }
+  
+  .input__check:checked + .slider:before {
+    transform: translateX(1.5em);
+  }
+  
+  @keyframes toggle__animation {
+    0%, 100% {
+      transform: translateY(-10px) rotateX(15deg) rotateY(-20deg);
+    }
+  
+    50% {
+      transform: translateY(0px) rotateX(15deg) rotateY(-20deg);
+    }
+  } 
+  .dark-mode{
+    background-color: black;
+    color: white;
+  }
+
+  /* From Uiverse.io by satyamchaudharydev */ 
+.loading {
+    --speed-of-animation: 0.9s;
+    --gap: 6px;
+    --first-color: #4c86f9;
+    --second-color: #49a84c;
+    --third-color: #f6bb02;
+    --fourth-color: #f6bb02;
+    --fifth-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    gap: 6px;
+    height: 50px;
+   }
+   
+   .loading span {
+    width: 4px;
+    height: 50px;
+    background: var(--first-color);
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+   }
+   
+   .loading span:nth-child(2) {
+    background: var(--second-color);
+    animation-delay: -0.8s;
+   }
+   
+   .loading span:nth-child(3) {
+    background: var(--third-color);
+    animation-delay: -0.7s;
+   }
+   
+   .loading span:nth-child(4) {
+    background: var(--fourth-color);
+    animation-delay: -0.6s;
+   }
+   
+   .loading span:nth-child(5) {
+    background: var(--fifth-color);
+    animation-delay: -0.5s;
+   }
+   
+   @keyframes scale {
+    0%, 40%, 100% {
+     transform: scaleY(0.05);
+    }
+   
+    20% {
+     transform: scaleY(1);
+    }
+   }
+
+   /* From Uiverse.io by Javierrocadev */ 
+.cardProfile {
+ 
+  width: 350px;
+  height: 300px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-image: url(myImage.jpg);
+  background-size: cover;
+}
+
+.cardProfile::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid transparent;
+  background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  transition: all 0.3s ease;
+  background-image: url(myImage.jpg);
+  background-size: cover;
+}
+
+.cardProfile * {
+  z-index: 1;
+
+}
+
+.imageProfile {
+  width: 90px;
+  height: 90px;
+  background-color: #1468BF;
+  border-radius: 50%;
+  border: 4px solid #fefefe;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+  background-image: url(myImage.jpg);
+  background-size: cover;
+}
+
+.cardProfile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+ 
+}
+
+.cardProfile-info span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #161A42;
+  margin-top: 15px;
+  line-height: 5px;
+}
+
+.cardProfile-info p {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonProfile {
+  text-decoration: none;
+  background-color: #1468BF;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.cardProfile:hover {
+  width: 300px;
+  border-radius: 250px;
+}
+
+.cardProfile:hover::before {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-bottom: none;
+  transform: scale(0.99);
+}
+
+.cardProfile:hover .card-info {
+  transform: translate(0%,-15%);
+}
+
+.buttonProfile:hover {
+  background-color: #FF6844;
+  transform: scale(1.1);
+
+}
+   
